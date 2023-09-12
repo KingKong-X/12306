@@ -13,5 +13,6 @@
 
     <modules>
         <module>convention</module>
+        <module>web</module>
     </modules>
 </project>

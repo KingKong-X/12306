@@ -26,11 +26,12 @@ public class UserLoginController {
     }
 
     /**
-     * check user if login by token
+     * check whether user login by token
      */
     @GetMapping("/api/user-service/check-login")
     public Result<UserLoginRespDTO> checkLogin(@RequestParam("accessToken") String accessToken) {
-        return Results.success(userLoginService.checkLogin(accessToken));
+        UserLoginRespDTO result = userLoginService.checkLogin(accessToken);
+        return Results.success(result);
     }
 
     /**

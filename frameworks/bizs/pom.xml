@@ -8,16 +8,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>frameworks</artifactId>
+    <artifactId>bizs</artifactId>
     <packaging>pom</packaging>
 
     <modules>
-        <module>convention</module>
-        <module>web</module>
-        <module>database</module>
-        <module>common</module>
-        <module>bizs</module>
-        <module>base</module>
-        <module>cache</module>
+        <module>user</module>
     </modules>
 </project>

@@ -1,17 +1,19 @@
-package com.xingyuan.study.userservice.dto.resp;
+package com.xingyuan.study.user.core;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
  * @author Xingyuan Huang
- * @since 2023/9/12 9:17
+ * @since 2023/9/12 20:40
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserLoginRespDTO {
+@Builder
+public class UserInfoDTO {
     private String userId;
 
     private String username;

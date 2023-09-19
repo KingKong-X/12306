@@ -32,7 +32,8 @@ public class StringRedisTemplateProxy implements DistributedCache{
 
     @Override
     public void put(String key, Object value, long timeout, TimeUnit timeUnit) {
-
+        String actual = value instanceof String ? (String) value : JSON.toJSONString(value);
+        stringRedisTemplate.opsForValue().set(key, actual, timeout, timeUnit);
     }
 
     @Override

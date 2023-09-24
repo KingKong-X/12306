@@ -38,8 +38,4 @@ public class Result<T> implements Serializable {
      * 请求ID
      */
     private String requestId;
-
-    public boolean isSuccess() {
-        return SUCCESS_CODE.equals(code);
-    }
 }

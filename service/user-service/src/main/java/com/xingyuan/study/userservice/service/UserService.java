@@ -1,6 +1,8 @@
 package com.xingyuan.study.userservice.service;
 
+import com.xingyuan.study.userservice.dto.req.UserRegisterReqDTO;
 import com.xingyuan.study.userservice.dto.resp.UserQueryRespDTO;
+import com.xingyuan.study.userservice.dto.resp.UserRegisterRespDTO;
 import jakarta.validation.constraints.NotEmpty;
 
 /**
@@ -15,4 +17,14 @@ public interface UserService {
      * @return user information
      */
     UserQueryRespDTO queryUserByUsername(@NotEmpty String username);
+
+    /**
+     * query the number of account cancellations
+     *
+     * @param idType certificate type
+     * @param idCard certificate number
+     *
+     * @return the number of account cancellations
+     */
+    Integer queryUserDeletionNum(Integer idType, String idCard);
 }
